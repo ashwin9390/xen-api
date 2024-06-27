@@ -22,6 +22,7 @@ install:
 	$(IPROG) libexec/nbd_client_manager.py $(DESTDIR)$(LIBEXECDIR)
 	$(IPROG) libexec/probe-device-for-file $(DESTDIR)$(LIBEXECDIR)
 	$(IPROG) libexec/print-custom-templates $(DESTDIR)$(LIBEXECDIR)
+	$(IPROG) libexec/restore-sr-metadata.py $(DESTDIR)$(LIBEXECDIR)
 
 	$(IPROG) bin/hfx_filename $(DESTDIR)$(OPTDIR)/bin
 	$(IPROG) bin/perfmon $(DESTDIR)$(OPTDIR)/bin
