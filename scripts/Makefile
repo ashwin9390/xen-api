@@ -124,8 +124,6 @@ install:
 	$(IPROG) extensions/pool_update.apply $(DESTDIR)$(EXTENSIONDIR)
 	mkdir -p $(DESTDIR)$(PLUGINDIR)
 	$(IPROG) plugins/perfmon $(DESTDIR)$(PLUGINDIR)
-	$(IPROG) plugins/extauth-hook $(DESTDIR)$(PLUGINDIR)
-	$(IPROG) plugins/extauth-hook-AD.py $(DESTDIR)$(PLUGINDIR)
 	$(IPROG) plugins/firewall-port $(DESTDIR)$(PLUGINDIR)
 	$(IPROG) plugins/openvswitch-config-update $(DESTDIR)$(PLUGINDIR)
 	mkdir -p $(DESTDIR)$(HOOKSDIR)/host-post-declare-dead

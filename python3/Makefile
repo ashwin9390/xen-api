@@ -26,6 +26,9 @@ install:
 	$(IPROG) bin/hfx_filename $(DESTDIR)$(OPTDIR)/bin
 	$(IPROG) bin/perfmon $(DESTDIR)$(OPTDIR)/bin
 	$(IPROG) bin/xe-scsi-dev-map $(DESTDIR)$(OPTDIR)/bin
+	$(IPROG) plugins/extauth-hook $(DESTDIR)$(PLUGINDIR)
+	$(IPROG) plugins/extauth-hook-AD.py $(DESTDIR)$(PLUGINDIR)
+
 	$(IPROG) plugins/disk-space $(DESTDIR)$(PLUGINDIR)
 	$(IPROG) plugins/install-supp-pack $(DESTDIR)$(PLUGINDIR)
 	$(IPROG) plugins/echo.py $(DESTDIR)$(PLUGINDIR)/echo
